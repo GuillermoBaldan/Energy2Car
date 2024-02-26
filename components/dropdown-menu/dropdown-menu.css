@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+    width: 80vw;
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+     /* Ajusta el ancho para adaptarse a la ventana de visualización */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    text-align: center;
+    border: 1px solid red;
+}
+
+.box {
+    width: calc(50% - 20px); /* Establece el ancho para dos columnas con espacio entre ellas */
+    margin-bottom: 20px; /* Espacio entre las filas */
+    height: 144px;
+    background: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+
+.inner-box {
+    width: 536px;
+    height: 116px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.icon {
+    height: 37px;
+    padding-left: 8px;
+    padding-right: 8px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+}
+
+.icon-content {
+    color: #005478;
+    font-size: 32px;
+    font-family: Font Awesome 5 Free;
+    font-weight: 900;
+    letter-spacing: 11.20px;
+    word-wrap: break-word;
+}
+
+.text {
+    width: 170px;
+    height: 36px;
+    color: #005478;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 36px;
+    word-wrap: break-word;
+}
+
+.description {
+    width: 504px;
+    height: 90px;
+    color: #005478;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
