@@ -2,69 +2,31 @@
     .navbar {
         display: none;
     }
+    
     .mobile-navbar {
-        width: 100%;
-        height: 100%;
-        padding-left: 8px;
-        padding-right: 8px;
-        background: white;
-        justify-content: space-between;
-        align-items: center;
-        display: inline-flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Alinea los elementos a los extremos */
+        align-items: center; /* Centra verticalmente los elementos */
+        padding: 0 10px; /* Añade un espacio entre los elementos y los bordes del contenedor */
     }
 
     .logo-container {
-        width: 122.07px;
-        height: 32px;
-        position: relative;
-    }
-
-    .logo-text {
-        width: 87.70px;
-        height: 32px;
-        left: 34.37px;
-        top: 0px;
-        position: absolute;
-        text-align: center;
-        color: black;
-        font-size: 28.44px;
-        font-family: Comfortaa;
-        font-weight: 400;
-        word-wrap: break-word;
-    }
-
-    .logo-container img {
-        width: 22.52px;
-        height: 22.52px;
-        position: absolute;
-    }
-
-    .logo-container img:nth-child(1) {
-        left: 0px;
-        top: 2.96px;
-    }
-
-    .logo-container img:nth-child(2) {
-        left: 22.52px;
-        top: 25.48px;
-        transform: rotate(-180deg);
-        transform-origin: 0 0;
+        margin-right: auto; /* Empuja el elemento al extremo izquierdo */
     }
 
     .menu-icon {
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        display: flex;
+        margin-left: auto; /* Empuja el elemento al extremo derecho */
     }
 
-    .menu-icon-text {
-        text-align: center;
+    .menu-icon-text i {
         color: #005478;
-        font-size: 28.44px;
+        text-align: center;
         font-family: "Font Awesome 5 Free";
+        font-size: 28.444px;
+        font-style: normal;
         font-weight: 900;
-        word-wrap: break-word;
+        line-height: normal;
+        letter-spacing: -0.427px;
     }
 }
