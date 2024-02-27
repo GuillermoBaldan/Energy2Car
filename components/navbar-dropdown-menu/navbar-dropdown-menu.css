@@ -16,7 +16,20 @@
         display: none;
     }
 
-     .navbar {
+    .container-dropdown-menu{
+        display: none;
+    }
+
+    .nav-links li:hover a {
+        color: #005478;
+    }
+    
+    .nav-links li:hover .container-dropdown-menu {
+        display: flex;
+    }
+
+
+        .navbar {
         background-color: #ffffff;
         width: 100%;
         padding: 0;
