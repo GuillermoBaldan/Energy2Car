@@ -1,3 +1,13 @@
+/* Configuración general */
+.container{
+    display: flex;
+    /*     border: 1px solid red;
+     */ 
+    flex-direction: column;
+     align-items: stretch;
+     padding: 0 5vw; /* Proporción relativa para padding en los bordes */
+}
+
 
 
 .container-dropdown-menu{
@@ -226,3 +236,65 @@
   }
 
 /* END basic slider */
+
+/* Text container component */
+/* This component is ready to use */
+.container {
+    display: flex;
+/*     border: 1px solid red;
+ */    align-items: stretch;
+    padding: 0 5vw; /* Proporción relativa para padding en los bordes */
+}
+
+.text-container {
+    width: 541px;
+    height: 90px;
+    flex-shrink: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+    padding-left: 15.8vw; /* Proporción relativa para padding izquierdo */
+}
+
+.text-container h2 {
+    color: #005478;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+    letter-spacing: -0.36px;
+}
+
+.text-container p,
+.text-container p a {
+    color: #005478;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.27px;
+}
+
+.text-container p a {
+    text-decoration-line: underline;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 0 5vw;
+    }
+
+    .text-container {
+        width: auto;
+        padding-left: 0;
+    }
+}
+
+/* END text container component */
