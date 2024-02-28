@@ -1,3 +1,4 @@
+/* Menú de barra de navegación */
 // Obtenemos la referencia al elemento .container-dropdown-menu
 const dropdownMenu = document.querySelector('.container-dropdown-menu');
     
@@ -20,3 +21,4 @@ dropdownMenu.addEventListener('mouseout', () => {
     // Ocultamos el menú dropdown al sacar el mouse sobre el div .container-dropdown-menu
     dropdownMenu.style.display = 'none';
 });
+/* END Menú barra de navegación */
