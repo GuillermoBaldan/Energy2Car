@@ -1,7 +1,8 @@
+/* This component is ready to use */
 .container {
     display: flex;
-    border: 1px solid red;
-    align-items: stretch;
+/*     border: 1px solid red;
+ */    align-items: stretch;
     padding: 0 5vw; /* Proporción relativa para padding en los bordes */
 }
 
