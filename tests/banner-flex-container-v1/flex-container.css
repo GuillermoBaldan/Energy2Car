@@ -1,0 +1,73 @@
+/* Estilos para el div padre */
+.padre {
+    display: flex;
+    width: 75.34rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.50)
+  }
+  
+  /* Estilos para el div hijo A */
+  .hijoA {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: auto;
+    width: 40rem;
+    
+    /* La altura se ajustará en función del contenido */
+/*     background-color: pink; */
+   /*  border: 1px solid red; */
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.promotion {
+    display: flex;
+    width: 200px;
+    height: 27px;
+    padding: 10px;
+    background: #0DCC74;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.knowmore {
+    display: flex;
+    width: 7rem;
+    height: auto;
+    padding: 10px;
+    background: #18A0FB;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.banner-text{
+    width: 658px;
+    color: black;
+    font-size: 32px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word
+}
+  
+
+
+  /* Estilos para la imagen (hijo B) */
+  .hijoB {
+    height: 100%; /* La altura será la misma que la del div padre */
+    width: auto; /* El ancho se ajustará para mantener las proporciones de la imagen */
+/*     border: 1px solid green;
+ */}
+  

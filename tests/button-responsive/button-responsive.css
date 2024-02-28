@@ -1,0 +1,18 @@
+.responsive-button {
+    font-size: 1rem;
+    display: inline-block;
+    width: calc(12% - 10px);
+    padding: 5px;
+    margin: 5px;
+    background-color: #18A0FB;
+    border-radius: 5px;    
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 6px 18px;
+  }
+  
+  @media (max-width: 425px) {
+    .responsive-button {
+      width: 80vw;
+    }
+  }
+  
