@@ -1,0 +1,57 @@
+/* Basic styles for the slider-container and slide slider-container */
+.slider-container {
+    width: 600px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the slider horizontally */
+    overflow: hidden;  /* Prevent slides from overflowing */
+   
+}
+  
+  .slider-screen {
+    display: flex; /* Arrange slides horizontally */
+    position: relative; /* Enable absolute positioning for controls */
+    animation: slideShow 10s linear infinite;  
+   
+    }
+  
+  /* Styles for individual slides */
+  .slide {
+    flex: 0 0 100%; /* Set equal width for each slide */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for slide changes */
+  }
+  
+  .slide.active {
+    opacity: 1; /* Make active slide fully visible */
+  }
+  
+  .slide:not(.active) {
+    opacity: 0; /* Hide inactive slides initially */
+    transform: translateX(-100%); /* Position inactive slides off-screen */
+  }
+  
+  /* Styles for image and optional caption (adjust as needed) */
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .slide-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+ 
+ @keyframes slideShow {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-500%); /* Slide slides to the left*/
+      /* formula = (numero de sliders - 1)*100 */
+    }
+  }
