@@ -171,13 +171,14 @@
     width: 600px; /* Adjust width as needed */
     margin: 0 auto; /* Center the slider horizontally */
     overflow: hidden;  /* Prevent slides from overflowing */
+    margin-top: 5vh;
    
 }
   
   .slider-screen {
     display: flex; /* Arrange slides horizontally */
     position: relative; /* Enable absolute positioning for controls */
-    animation: slideShow 10s linear infinite;  
+    animation: slideShow 20s linear infinite;  
    
     }
   
