@@ -1,0 +1,112 @@
+@media only screen and (min-width: 768px) {
+    html {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0px;
+        font-family: Arial, sans-serif;
+        padding: 0px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .mobile-navbar{
+        display: none;
+    }
+
+    .container-dropdown-menu{
+        display: none;
+    }
+
+    .nav-links li:hover a {
+        color: #005478;
+    }
+    
+    .nav-links li:hover .container-dropdown-menu {
+        display: flex;
+    }
+
+
+        .navbar {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        margin: 0px;
+    } 
+
+    .logo img {
+        height: 40px; /* Ajusta el tamaño según tus necesidades */
+    }
+
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+    }
+
+    .nav-links li:last-child {
+        margin-right: 0;
+    }
+
+    .nav-links a {
+        color: #18A0FB;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .register-btn a {
+        background-color: #18A0FB; /* Cambia el color según tus preferencias */
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 16px;
+        width: 1vw;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .navbar {
+        display: none;
+    }
+    
+    .mobile-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Alinea los elementos a los extremos */
+        align-items: center; /* Centra verticalmente los elementos */
+        padding: 0 10px; /* Añade un espacio entre los elementos y los bordes del contenedor */
+    }
+
+    .logo-container {
+        margin-right: auto; /* Empuja el elemento al extremo izquierdo */
+    }
+
+    .menu-icon {
+        margin-left: auto; /* Empuja el elemento al extremo derecho */
+    }
+
+    .menu-icon-text i {
+        color: #005478;
+        text-align: center;
+        font-family: "Font Awesome 5 Free";
+        font-size: 28.444px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: -0.427px;
+    }
+}

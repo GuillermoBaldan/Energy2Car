@@ -1,0 +1,50 @@
+/* Botón responsive-p */
+/* Ready to use */
+.knowmore-container {
+    width: auto;
+    height: 14px;
+    padding: 10px;
+    background: #18A0FB;
+    border-radius: 10px;
+    justify-knowmore-content: center; /* Ajustamos el alineamiento horizontal */
+    align-items: center;
+    display: inline-flex; /* Utilizamos flexbox */
+}
+
+.knowmore-content {
+    width: auto;
+    height: 14px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.195px;
+    text-align: center; /* Ajustamos el alineamiento del texto */
+}
+
+/* Estilos específicos para tabletas */
+@media screen and (max-width: 768px) {
+    .knowmore-container {
+        padding: 8px; /* Reducir el espacio de relleno para tabletas */
+    }
+    
+    .knowmore-content {
+        font-size: 12px; /* Reducir el tamaño de la fuente para tabletas */
+    }
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media screen and (max-width: 480px) {
+    .knowmore-container {
+        padding: 6px; /* Reducir aún más el espacio de relleno para móviles */
+    }
+    
+    .knowmore-content {
+        font-size: 10px; /* Reducir aún más el tamaño de la fuente para móviles */
+    }
+}
+
+

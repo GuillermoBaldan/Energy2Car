@@ -1,0 +1,65 @@
+@media only screen and (min-width: 768px) {
+    html {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0px;
+        font-family: Arial, sans-serif;
+        padding: 0px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .mobile-navbar{
+        display: none;
+    }
+
+     .navbar {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        margin: 0px;
+    } 
+
+    .logo img {
+        height: 40px; /* Ajusta el tamaño según tus necesidades */
+    }
+
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+    }
+
+    .nav-links li:last-child {
+        margin-right: 0;
+    }
+
+    .nav-links a {
+        color: #18A0FB;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .register-btn a {
+        background-color: #18A0FB; /* Cambia el color según tus preferencias */
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 16px;
+        width: 1vw;
+    }
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -46,3 +47,305 @@ body {
     font-size: 16px;
     width: 1vw;
 }
+=======
+/* Configuración general */
+.container{
+    display: flex;
+    /*     border: 1px solid red;
+     */ 
+    flex-direction: column;
+     align-items: stretch;
+     padding: 0 5vw; /* Proporción relativa para padding en los bordes */
+}
+
+
+
+.container-dropdown-menu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+   /*  border: 1px solid red; */
+    text-align: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.box {
+    width: 35vw;
+    height: auto; /* Ajusta la altura automáticamente al contenido */
+    /* border: 1px solid green; */
+    margin-bottom: 8vh ;  
+}
+
+.title-icon{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1vw;
+    color: #005478;
+    font-size: 1.2rem;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-family: Montserrat;
+}
+
+.icon-content {
+    margin-right: 1vw;
+    color: #005478;
+    font-size: 1.3rem;
+    font-weight: 900;
+    letter-spacing: 11.20px;
+    word-wrap: break-word;
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: lighter;
+    word-wrap: break-word;
+    color: #005478;
+    text-align: left;
+    padding-left: 3rem;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0px;
+        font-family: Arial, sans-serif;
+        padding: 0px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .mobile-navbar{
+        display: none;
+    }
+
+    .container-dropdown-menu{
+        display: none;
+    }
+
+    .nav-links li:hover a {
+        color: #005478;
+    }
+    
+    .nav-links li:hover .container-dropdown-menu {
+        display: flex;
+    }
+
+
+        .navbar {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid black;
+        margin: 0px;
+    } 
+
+    .logo img {
+        height: 40px; /* Ajusta el tamaño según tus necesidades */
+    }
+
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+    }
+
+    .nav-links li:last-child {
+        margin-right: 0;
+    }
+
+    .nav-links a {
+        color: #18A0FB;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .register-btn a {
+        background-color: #18A0FB; /* Cambia el color según tus preferencias */
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 16px;
+        width: 1vw;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .navbar {
+        display: none;
+    }
+    
+    .mobile-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Alinea los elementos a los extremos */
+        align-items: center; /* Centra verticalmente los elementos */
+        padding: 0 10px; /* Añade un espacio entre los elementos y los bordes del contenedor */
+    }
+
+    .logo-container {
+        margin-right: auto; /* Empuja el elemento al extremo izquierdo */
+    }
+
+    .menu-icon {
+        margin-left: auto; /* Empuja el elemento al extremo derecho */
+    }
+
+    .menu-icon-text i {
+        color: #005478;
+        text-align: center;
+        font-family: "Font Awesome 5 Free";
+        font-size: 28.444px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: -0.427px;
+    }
+}
+/* END Barra de navegación */
+
+/* Basic Slider */
+/* basic slider ready to use
+ *//* Basic styles for the slider-container and slide slider-container */
+ .slider-container {
+    width: 600px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the slider horizontally */
+    overflow: hidden;  /* Prevent slides from overflowing */
+    margin-top: 5vh;
+   
+}
+  
+  .slider-screen {
+    display: flex; /* Arrange slides horizontally */
+    position: relative; /* Enable absolute positioning for controls */
+    animation: slideShow 20s linear infinite;  
+   
+    }
+  
+  /* Styles for individual slides */
+  .slide {
+    flex: 0 0 100%; /* Set equal width for each slide */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for slide changes */
+  }
+  
+  .slide.active {
+    opacity: 1; /* Make active slide fully visible */
+  }
+  
+  .slide:not(.active) {
+    opacity: 0; /* Hide inactive slides initially */
+    transform: translateX(-100%); /* Position inactive slides off-screen */
+  }
+  
+  /* Styles for image and optional caption (adjust as needed) */
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .slide-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+ 
+ @keyframes slideShow {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-500%); /* Slide slides to the left*/
+      /* formula = (numero de sliders - 1)*100 */
+    }
+  }
+
+/* END basic slider */
+
+/* Text container component */
+/* This component is ready to use */
+.container {
+    display: flex;
+/*     border: 1px solid red;
+ */    align-items: stretch;
+    padding: 0 5vw; /* Proporción relativa para padding en los bordes */
+}
+
+.text-container {
+    width: 541px;
+    height: 90px;
+    flex-shrink: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+    padding-left: 15.8vw; /* Proporción relativa para padding izquierdo */
+}
+
+.text-container h2 {
+    color: #005478;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+    letter-spacing: -0.36px;
+}
+
+.text-container p,
+.text-container p a {
+    color: #005478;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.27px;
+}
+
+.text-container p a {
+    text-decoration-line: underline;
+}
+
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 0 5vw;
+    }
+
+    .text-container {
+        width: auto;
+        padding-left: 0;
+    }
+}
+
+/* END text container component */
+>>>>>>> table-component

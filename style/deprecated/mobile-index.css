@@ -1,0 +1,32 @@
+@media only screen and (max-width: 767px) {
+    .navbar {
+        display: none;
+    }
+    
+    .mobile-navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Alinea los elementos a los extremos */
+        align-items: center; /* Centra verticalmente los elementos */
+        padding: 0 10px; /* Añade un espacio entre los elementos y los bordes del contenedor */
+    }
+
+    .logo-container {
+        margin-right: auto; /* Empuja el elemento al extremo izquierdo */
+    }
+
+    .menu-icon {
+        margin-left: auto; /* Empuja el elemento al extremo derecho */
+    }
+
+    .menu-icon-text i {
+        color: #005478;
+        text-align: center;
+        font-family: "Font Awesome 5 Free";
+        font-size: 28.444px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: -0.427px;
+    }
+}
