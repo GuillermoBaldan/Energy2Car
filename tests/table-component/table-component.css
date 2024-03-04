@@ -1,0 +1,17 @@
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+.mobile-header {
+    display: none;
+}
+
+.background--white{
+    background-color: white
+    
+}
+
+.background--grey{
+    background-color: #F6F6F7;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h2>Formulario de Registro</h2>
+    <form action="enviar_formulario.php" method="post">
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais" required><br><br>
+
+        <label for="ciudad">Ciudad de registro:</label>
+        <input type="text" id="ciudad" name="ciudad" required><br><br>
+
+        <label for="idioma">Idioma:</label>
+        <select id="idioma" name="idioma" required>
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+            <option value="fr">Francés</option>
+        </select><br><br>
+
+        <label for="correo">Dirección de correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+
+        <label for="pin">PIN mágico:</label>
+        <input type="text" id="pin" name="pin" required><br><br>
+
+        <label for="movil">Número de móvil:</label>
+        <input type="tel" id="movil" name="movil" required><br><br>
+
+        <label for="preferencias">Género:</label><br>
+        <input type="radio" id="noticias" name="preferencias" value="noticias">
+        <label for="noticias">Hombre</label><br>
+
+        <input type="radio" id="encuestas" name="preferencias" value="encuestas">
+        <label for="encuestas">Mujer</label><br>
+
+        <input type="radio" id="recordatorios" name="preferencias" value="recordatorios">
+        <label for="recordatorios">Me reservo esa información</label><br><br>
+
+        <label for="codigo_promocional">Código promocional:</label>
+        <input type="text" id="codigo_promocional" name="codigo_promocional"><br><br>
+
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto los términos y Condiciones de United Dreams</label><br>
+
+        <input type="checkbox" id="ofertas_energy2car" name="ofertas_energy2car">
+        <label for="ofertas_energy2car">Si, quiero recibir ofertas de Energy2car</label><br>
+
+        <input type="checkbox" id="ofertas_socios_energy2car" name="ofertas_socios_energy2car">
+        <label for="ofertas_socios_energy2car">Si, me gustaría recibir descuentos, productos gratuitos y ofertas especiales de los socios de Energy2car</label><br>
+
+        <input type="checkbox" id="anuncios_personalizados" name="anuncios_personalizados">
+        <label for="anuncios_personalizados">Si quiero recibir ofertas de Energy2Car sobre anuncios publicitarios que se ajusten a mis intereses en vez de anuncios genéricos. Para Energy2Car puede utilizar mis datos personales anonimizados</label><br><br>
+
+       
+
+        <input type="submit" value="Registrate ahora">
+        <input type="reset" value="Limpiar">
+    </form>
+</body>
+</html>
