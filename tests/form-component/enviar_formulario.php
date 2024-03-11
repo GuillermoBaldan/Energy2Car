@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $correo_destino = "guillermo@generico.com";
+    $correo_destino = "guillermobaldan@gmail.com";
     $asunto = "Nuevo registro en el formulario";
 
     $mensaje = "Se ha recibido un nuevo registro con los siguientes datos:\n\n";
