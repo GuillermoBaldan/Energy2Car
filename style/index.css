@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 0 5vw; /* Proporción relativa para padding en los bordes */
+    padding: 0 0.07vw; /* Proporción relativa para padding en los bordes */
 }
 
 .container-dropdown-menu {
