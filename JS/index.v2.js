@@ -22,6 +22,38 @@ dropdownMenu.addEventListener('mouseout', () => {
     dropdownMenu.style.display = 'none';
 });
 
+/* Menú side-menu */
+document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.querySelector('.menu-icon');
+    const sideMenu = document.querySelector('.side-menu');
+    let menuVisible = false; // Estado del menú
+
+    menuIcon.addEventListener('click', () => {
+        if (menuVisible) {
+            sideMenu.style.left = '-250px';
+        } else {
+            sideMenu.style.left = '0';
+        }
+        menuVisible = !menuVisible; // Alternar el estado del menú
+        console.log("Se ha pulsado el menu hamburguesa");
+    });
+
+    // Ocultar el menú cuando se hace clic fuera de él
+    document.addEventListener('click', (event) => {
+        if (!menuIcon.contains(event.target) && !sideMenu.contains(event.target)) {
+         if(menuVisible){
+            sideMenu.style.left = '-250px';
+            menuVisible = !menuVisible;
+         }
+            console.log("Se ha pulsado fuera del menu");
+            console.log("false");
+        }
+       
+    });
+}); 
+
+/*END side-menu    */
+
 /* Dropdown menu */
 document.addEventListener('DOMContentLoaded', () => {
     const dropdownMenu = document.querySelector('.container-dropdown-menu');
