@@ -143,9 +143,9 @@
         font-size: 16px;
         width: 1vw;
     }
-}
+}/* END Barra de navegación */
 
-
+/* Menu hamburguesa*/
 @media only screen and (max-width: 767px) {
     .navbar {
         display: none;
@@ -178,7 +178,94 @@
         letter-spacing: -0.427px;
     }
 }
-/* END Barra de navegación */
+
+
+
+/* END Menu hamburguesa*/
+
+/* Dropdown Menu Maxwidth 600px */
+@media (max-width: 767px) {
+    .container-dropdown-menu {
+        display: none; /* Ocultar el menú por defecto */
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .box {
+        width: 90vw;
+        margin-bottom: 8vh;
+    }
+
+    .description {
+        padding-left: 1rem;
+        text-align: center;
+    }
+
+    .title-icon {
+        justify-content: center;
+    }
+}
+/* END Dropdown Menu Maxwidth 600px */
+
+
+
+/* Estilos para el menú lateral */
+/*Menu lateral*/
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Fuera de la pantalla inicialmente */
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 16px;
+    text-align: center;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #005478;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-icon-text i {
+    color: #005478;
+    text-align: center;
+    font-family: "Font Awesome 5 Free";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.427px;
+}
+
+/* Mostrar menú lateral cuando se activa */
+.side-menu.show {
+    left: 0;
+}/* END Menu lateral*/
+
+
+
 
 /* Basic Slider */
 /* basic slider ready to use
