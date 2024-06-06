@@ -57,12 +57,80 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('.menu-icon');
     const sideMenu = document.querySelector('.side-menu');
+    let menuVisible = false; // Estado del menú
 
+    const animateMenu = (start, end, duration) => {
+        const frames = 20; // Número de fotogramas
+        const interval = duration / frames; // Duración de cada fotograma
+        const step = (end - start) / frames; // Cantidad de movimiento por fotograma
+        let current = start;
+        let frame = 0;
+
+        const animate = () => {
+            current += step;
+            sideMenu.style.transform = `translateX(${current}px)`;
+            frame += 1;
+            if (frame < frames) {
+                setTimeout(animate, interval);
+            } else {
+                if (end === -250) {
+                    menuVisible = false;
+                } else {
+                    menuVisible = true;
+                }
+            }
+        };
+
+        animate();
+    };
+
+    menuIcon.addEventListener('click', () => {
+        if (menuVisible) {
+            animateMenu(0, -250, 100);
+        } /* else {
+            animateMenu(-250, 0, 100);
+        } */
+        console.log("Se ha pulsado el menu hamburguesa");
+    });
+
+    // Ocultar el menú cuando se hace clic fuera de él
+    document.addEventListener('click', (event) => {
+        if (!menuIcon.contains(event.target) && !sideMenu.contains(event.target)) {
+            if (menuVisible) {
+                animateMenu(0, -250, 100);
+                console.log("Se ha pulsado fuera del menu");
+            }
+        }
+    });
+});
+
+
+/*END Menú lateral    */
+
+
+/* Menu lateral carga tu coche */
+document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.querySelector('.menu-icon');
+    const sideMenu = document.querySelector('.side-menu');
+    const cargaTuCocheLink = document.querySelector('.nav-links li a[href="#carga-tu-coche"]');
+    const sideMenuMobile = document.querySelector('.side-menu-mobile');
+
+    // Maneja el clic en el icono del menú para el menú lateral principal
     menuIcon.addEventListener('click', () => {
         sideMenu.classList.toggle('show');
     });
-});/* END Menú lateral */
 
+    // Maneja el clic en el enlace "Carga tu coche" para resoluciones móviles
+    if (window.innerWidth <= 767) {
+        cargaTuCocheLink.addEventListener('click', (e) => {
+            e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+            sideMenuMobile.classList.toggle('show');
+        });
+    }
+});
+
+
+/* END Menu lateral carga tu coche */
 
 
 // Script para mostrar el ancho de la pantalla en la consola
