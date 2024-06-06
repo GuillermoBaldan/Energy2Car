@@ -1,5 +1,3 @@
-
-
 .container-dropdown-menu{
     display: flex;
     flex-wrap: wrap;
@@ -48,4 +46,28 @@
     padding-left: 3rem;
     font-family: Montserrat;
     font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .container-dropdown-menu {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .box {
+        width: 90vw;
+        margin-bottom: 8vh;
+    }
+
+    .description {
+        padding-left: 1rem;
+        text-align: center;
+    }
+
+    .title-icon {
+        justify-content: center;
+    }
 }
