@@ -55,32 +55,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /* Menú side-menu-chargecar */
 document.addEventListener('DOMContentLoaded', () => {
-    const chargeCarLink = document.querySelector('#chargeCarLink');
-    const SideMenuChargeCar = document.querySelector('.side-menu-chargecar');
-    let menuVisible = false; // Estado del menú
-    console.log("se carga addeventlistener del SideMenuChargeCar")
-    chargeCarLink.addEventListener('click', () => {
-        
+    const chargeCarLink = document.getElementById('chargeCarLink');
+    const sideMenuChargeCar = document.querySelector('.side-menu-chargecar');
+    let menuVisible = false;
+
+    console.log("Se ha cargado el código del side-menu-chargecar");
+
+    chargeCarLink.addEventListener('click', (event) => {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
         if (menuVisible) {
-            SideMenuChargeCar.style.left = '-250px';
+            sideMenuChargeCar.style.left = '-250px';
         } else {
-            SideMenuChargeCar.style.left = '250px'; // Ajustado de '250px' a '0' para que aparezca desde el borde izquierdo
+            sideMenuChargeCar.style.left = '250px';
         }
-        menuVisible = !menuVisible; // Alternar el estado del menú
-        console.log("Se ha pulsado el enlace 'Carga tu coche'");
+        menuVisible = !menuVisible;
+        console.log("Se ha pulsado 'Carga tu coche'");
     });
 
-    // Ocultar el menú cuando se hace clic fuera de él
-/*     document.addEventListener('click', (event) => {
-        if (!chargeCarLink.contains(event.target) && !SideMenuChargeCar.contains(event.target)) {
-            if(menuVisible){
-                SideMenuChargeCar.style.left = '-250px';
-                menuVisible = !menuVisible;
+    document.addEventListener('click', (event) => {
+        if (!chargeCarLink.contains(event.target) && !sideMenuChargeCar.contains(event.target)) {
+            if (menuVisible) {
+                sideMenuChargeCar.style.left = '-250px';
+                menuVisible = false;
+                console.log("Se ha pulsado fuera del menú");
             }
-            console.log("Se ha pulsado fuera del menu sidecarcharge");
         }
-    }); */
-}); 
+    });
+});
 
 /*END side-menu-chargecar    */
 
