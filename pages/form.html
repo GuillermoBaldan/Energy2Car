@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Plataforma de Carga Eléctrica</title>
+    <link rel="stylesheet" href="../style/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Solo tardarás 3 minutos</h2>
+        <p>Miles de coches, en solo una aplicación. Coge un coche a la vuelta de la esquina y ponte en marcha a través de la app. Regístrate ahora por solo 9 € y recibe un crédito de 15 € para empezar a conducir enseguida.</p>
+        <h2>Regístrate en Plataforma de Carga Eléctrica</h2>
+        <p>Elige la ciudad en la que vas a conducir principalmente</p>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="pais">País</label>
+                <select id="pais" name="pais">
+                    <option value="ES">ES</option>
+                    <option value="US">US</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ciudad">Ciudad de registro</label>
+                <select id="ciudad" name="ciudad">
+                    <option value="Madrid">Madrid</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="idioma">Idioma</label>
+                <select id="idioma" name="idioma">
+                    <option value="Español">Español</option>
+                    <option value="Inglés">Inglés</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Dirección de correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Número de teléfono móvil</label>
+                <div class="phone-input">
+                    <select id="codigo-pais" name="codigo-pais">
+                        <option value="+34">+34</option>
+                        <option value="+1">+1</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="promocional">Código promocional</label>
+                <input type="text" id="promocional" name="promocional">
+                <small>¿Tienes un código promocional? Introdúcelo aquí.</small>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los <a href="#">Términos y Condiciones</a> de Plataforma de Carga Eléctrica.</label>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="ofertas" name="ofertas">
+                <label for="ofertas">Sí, quiero recibir ofertas de Plataforma de Carga Eléctrica (opcional).</label>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="descuentos" name="descuentos">
+                <label for="descuentos">Sí, me gustaría recibir descuentos, productos gratuitos y ofertas especiales de los socios de Plataforma de Carga Eléctrica (opcional).</label>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="anuncios" name="anuncios">
+                <label for="anuncios">Sí, quiero recibir ofertas de Plataforma de Carga Eléctrica sobre anuncios publicitarios que se ajusten a mis intereses en vez de anuncios genéricos. Para ello, Plataforma de Carga Eléctrica puede utilizar mis datos personales anonimizados. (opcional)</label>
+            </div>
+            <button type="submit">Confirmar Registro</button>
+        </form>
+        <footer>
+            <p>Puedes anular tu consentimiento en cualquier momento cambiando tus preferencias de privacidad en la configuración de tu cuenta, o bien contactando con nosotros. Si anulas tu consentimiento después, esto no afectará a la legalidad del procesamiento de tus datos, que estará basado en tu anterior consentimiento.</p>
+            <p>&copy; 2024 Plataforma de Carga Eléctrica. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
