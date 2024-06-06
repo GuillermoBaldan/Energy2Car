@@ -59,22 +59,18 @@
 }
 
 /* Menu lateral */
+/* Menu lateral */
 .side-menu {
-    display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: -250px; /* Fuera de la pantalla inicialmente */
+    left: 0; /* Fuera de la pantalla inicialmente */
     width: 250px;
     height: 100%;
     background-color: #ffffff;
     box-shadow: 2px 0 5px rgba(0,0,0,0.5);
-    transition: transform 0.6s ease;
+    transition: left 0.6s ease; /* Añadir transición suave */
     z-index: 1000;
     padding-top: 60px;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px; /* 150% */
 }
 
 .side-menu ul {
@@ -93,10 +89,7 @@
     font-size: 18px;
     font-weight: 700;
 }
-
-.side-menu {
-    left: -250px;
-}/* END Menu lateral */
+/* END Menu lateral */
 
 
 /* Menu lateral charge car */
@@ -268,36 +261,6 @@
     }
 }
 
-/* Menu lateral */
-.side-menu {
-    position: fixed;
-    top: 0;
-    left: -250px; /* Fuera de la pantalla inicialmente */
-    width: 250px;
-    height: 100%;
-    background-color: #ffffff;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
-    transition: transform 0.6s ease;
-    z-index: 1000;
-    padding-top: 60px;
-}
-
-.side-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.side-menu ul li {
-    padding: 16px;
-    text-align: center;
-}
-
-.side-menu ul li a {
-    text-decoration: none;
-    color: #005478;
-    font-size: 18px;
-    font-weight: 700;
-}
 
 
 
@@ -310,13 +273,8 @@
         display: flex; /* Mostrar navbar móvil */
     }
 
-    .side-menu {
-        display: none; /* Ocultar menú lateral estándar */
-    }
 
-    .side-menu.show {
-        display: block; /* Mostrar el menú lateral estándar cuando se active */
-    }
+
 }
 
 /* side-menu-mobile */
