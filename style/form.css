@@ -82,11 +82,14 @@ form {
 
 .checkbox-group {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 1rem;
 }
 
 .checkbox-group input {
     margin-right: 0.5rem;
+    margin-top: 0.2rem;
+    width: 3%;
 }
 
 .checkbox-group label {
@@ -125,4 +128,22 @@ footer {
 
 footer p {
     margin-bottom: 1rem;
+}
+
+.radio-group{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.radio-group .circle {
+    display: block;
+    width: 13px;
+    margin-bottom: 1rem;
+}
+
+.radio-group label {
+    display: flex;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
 }
