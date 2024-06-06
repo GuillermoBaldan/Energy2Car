@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planifica tu viaje - Energy2Car</title>
+    <link rel="stylesheet" href="../style/planyourtravel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="steps">
+            <span class="step">1. Elige un modelo</span>
+            <span class="step">2. Cobertura complementaria</span>
+            <span class="step">3. Opciones a añadir</span>
+            <span class="step">4. Confirmación de la reserva</span>
+        </nav>
+        <section class="booking">
+            <h2>Elige la dirección de recogida</h2>
+            <div class="booking-details">
+                <div class="form-group">
+                    <label for="pais">País y ciudad</label>
+                    <select id="pais" name="pais">
+                        <option value="Madrid">Madrid</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <!-- Añadir más opciones según sea necesario -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección de recogida</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Ciudad, calle, nº.">
+                </div>
+                <div class="form-group">
+                    <label for="fecha-salida">Fecha de salida</label>
+                    <input type="date" id="fecha-salida" name="fecha-salida">
+                    <input type="time" id="hora-salida" name="hora-salida">
+                </div>
+                <div class="form-group">
+                    <label for="fecha-devolucion">Fecha de devolución</label>
+                    <input type="date" id="fecha-devolucion" name="fecha-devolucion">
+                    <input type="time" id="hora-devolucion" name="hora-devolucion">
+                </div>
+                
+            </div>
+            <div class="button-container">
+                <button class="search-btn">Buscar</button>
+            </div>
+        </section>
+        <section class="info">
+            <div class="info-box">
+                <img src="../IMG/pick-up.svg" alt="Encuentra tu coche">
+                <p>Encuentra el punto de carga y ponte en marcha. Sin agencias de alquiler, sin colas, sin papeleo: tu coche estará cargado y listo para tu viaje.</p>
+            </div>
+            <div class="info-box">
+                <img src="../IMG/fuel.svg" alt="Gastos incluidos">
+                <p>Los gastos de carga correrán por nuestra cuenta. Solo pagas por la energía consumida. En algunas ciudades, como Madrid, la tarifa incluye una cierta cantidad de kilómetros gratuitos.</p>
+                <a href="#">Más información</a>
+            </div>
+            <div class="info-box">
+                <img src="../IMG/keyless.svg" alt="Sin llave">
+                <p>Este coche no tiene llave. Todo lo que necesitas para empezar es la App de Energy2Car.</p>
+            </div>
+        </section>
+        <section class="faq">
+            <h2>PREGUNTAS FRECUENTES</h2>
+            <div class="faq-item">
+                <button class="faq-question">¿Cómo alquilo coches sin llave?</button>
+                <div class="faq-answer">Puedes alquilar coches directamente desde la app sin necesidad de llaves. Solo necesitas tu teléfono para desbloquear y arrancar el coche.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Cómo reporto daños en un coche?</button>
+                <div class="faq-answer">Puedes reportar cualquier daño a través de la app o contactando a nuestro servicio de atención al cliente.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Puedo viajar a otra ciudad?</button>
+                <div class="faq-answer">Sí, puedes viajar a otras ciudades siempre y cuando las estaciones de carga de Energy2Car estén disponibles en tu destino.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Cómo puedo localizar el punto de carga que he reservado previamente?</button>
+                <div class="faq-answer">Puedes localizar el punto de carga reservado a través de la app de Energy2Car, donde verás la ubicación exacta y las instrucciones para llegar.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">¿Qué pasa si recojo el coche después de la hora acordada?</button>
+                <div class="faq-answer">Si recoges el coche después de la hora acordada, puede que se aplique un cargo adicional. Te recomendamos siempre informar si vas a llegar tarde para evitar problemas.</div>
+            </div>
+        </section>
+    </div>
+    <script src="../JS/planyourtravel.js"></script>
+</body>
+</html>

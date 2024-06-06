@@ -1,0 +1,167 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    padding: 20px;
+}
+
+nav.steps {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #fff;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+nav.steps .step {
+    font-size: 0.9rem;
+    color: #0A233F;
+    font-weight: 600;
+}
+
+section.booking {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.booking h2 {
+    color: #0A233F;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.booking .booking-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.booking .form-group {
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+}
+
+.booking .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0A233F;
+    font-weight: 600;
+}
+
+.booking .form-group input,
+.booking .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.booking .search-btn {
+    background-color: #0A233F;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 21px;
+}
+
+.booking .search-btn:hover {
+    background-color: #005478;
+}
+
+section.info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.info-box {
+    background-color: #e7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+}
+
+.info-box img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.info-box p {
+    color: #0A233F;
+    font-size: 1rem;
+}
+
+.info-box a {
+    color: #005478;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}
+
+section.faq {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    color: #0A233F;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #0A233F;
+    font-weight: 600;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.faq-question:focus + .faq-answer {
+    display: block;
+}
