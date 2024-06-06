@@ -54,32 +54,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /*END side-menu    */
 
+/* Menú side-menu-chargecar */
+document.addEventListener('DOMContentLoaded', () => {
+    const chargeCarLink = document.querySelector('#chargeCarLink');
+    const SideMenuChargeCar = document.querySelector('.side-menu-chargecar');
+    let menuVisible = false; // Estado del menú
+    console.log("se carga addeventlistener del SideMenuChargeCar")
+    chargeCarLink.addEventListener('click', () => {
+        
+        if (menuVisible) {
+            SideMenuChargeCar.style.left = '-250px';
+        } else {
+            SideMenuChargeCar.style.left = '250px'; // Ajustado de '250px' a '0' para que aparezca desde el borde izquierdo
+        }
+        menuVisible = !menuVisible; // Alternar el estado del menú
+        console.log("Se ha pulsado el enlace 'Carga tu coche'");
+    });
+
+    // Ocultar el menú cuando se hace clic fuera de él
+/*     document.addEventListener('click', (event) => {
+        if (!chargeCarLink.contains(event.target) && !SideMenuChargeCar.contains(event.target)) {
+            if(menuVisible){
+                SideMenuChargeCar.style.left = '-250px';
+                menuVisible = !menuVisible;
+            }
+            console.log("Se ha pulsado fuera del menu sidecarcharge");
+        }
+    }); */
+}); 
+
+/*END side-menu-chargecar    */
+
 /* Dropdown menu */
 document.addEventListener('DOMContentLoaded', () => {
     const dropdownMenu = document.querySelector('.container-dropdown-menu');
     const mobileNavbar = document.querySelector('.mobile-navbar'); // Navbar para resoluciones móviles
 
-    if (window.innerWidth <= 600) {
-        // Mostrar menú al pasar el ratón por encima de la barra de navegación
-        mobileNavbar.addEventListener('mouseover', () => {
-            dropdownMenu.style.display = 'flex';
-        });
-
-        // Ocultar menú al sacar el ratón de la barra de navegación
-        mobileNavbar.addEventListener('mouseout', () => {
-            dropdownMenu.style.display = 'none';
-        });
-
-        // Mostrar menú al pasar el ratón por encima del menú
-        dropdownMenu.addEventListener('mouseover', () => {
-            dropdownMenu.style.display = 'flex';
-        });
-
-        // Ocultar menú al sacar el ratón del menú
-        dropdownMenu.addEventListener('mouseout', () => {
-            dropdownMenu.style.display = 'none';
-        });
-    }
 });/* END Dropdown menu */
 
 
@@ -141,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 /* Menu lateral carga tu coche */
-document.addEventListener('DOMContentLoaded', () => {
+ document.addEventListener('DOMContentLoaded', () => {
     const menuIcon = document.querySelector('.menu-icon');
     const sideMenu = document.querySelector('.side-menu');
     const cargaTuCocheLink = document.querySelector('.nav-links li a[href="#carga-tu-coche"]');
@@ -159,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sideMenuMobile.classList.toggle('show');
         });
     }
-});
+}); 
 
 
 /* END Menu lateral carga tu coche */
