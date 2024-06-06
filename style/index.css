@@ -13,14 +13,20 @@
 .container-dropdown-menu{
     display: flex;
     flex-wrap: wrap;
-    width: 80vw;
-   /*  border: 1px solid red; */
+    position: fixed;
+    top: 5%;
+    width: 80%;
+    z-index: 999;
+    background-color: #ffffff; /* Cambia #ffffff por el color de fondo que desees */
+    opacity: 0.9; /* Ajusta la opacidad según tus preferencias */
+    /* border: 1px solid red; */
     text-align: center;
-    margin: 0 auto;
     justify-content: space-between;
     padding-left: 5vw;
     padding-right: 5vw;
+   
 }
+
 
 .box {
     width: 35vw;
