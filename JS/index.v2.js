@@ -117,4 +117,47 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', mostrarAnchoPantalla);
 });
 
+//Gestión de las cookies
+document.addEventListener('DOMContentLoaded', () => {
+    const acceptButton = document.querySelector('.accept-btn');
+    const cookieBanner = document.querySelector('.cookie-banner');
+    
+    console.log(getCookie('cookiesAccepted'))
+    // Comprobar si la cookie existe
+    if (!getCookie('cookiesAccepted')) {
+        // Mostrar el banner si la cookie no existe
+        cookieBanner.style.display = 'flex';
+    }else{
+        cookieBanner.style.display = 'none';
+    }
+
+    // Función para establecer una cookie
+    function setCookie(name, value, days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+
+    // Función para obtener una cookie
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+
+    // Evento de clic en el botón aceptar
+    acceptButton.addEventListener('click', () => {
+        setCookie('cookiesAccepted', 'true', 365); // La cookie expirará en 1 año
+        cookieBanner.style.display = 'none';
+        console.log("cookies accepted!")
+    });
+});
+
 

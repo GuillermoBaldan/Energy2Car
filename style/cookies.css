@@ -1,0 +1,45 @@
+/* Estilos para el banner de cookies */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 96%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 2rem;
+ 
+    
+}
+
+.cookie-banner p {
+    margin: 0;
+    flex: 1;
+   
+}
+
+.accept-btn {
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border-radius: 27px;
+    
+}
+
+.accept-btn:hover {
+    background-color: rgb(1, 184, 1)
+}
