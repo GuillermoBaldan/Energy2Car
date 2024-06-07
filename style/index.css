@@ -61,7 +61,6 @@
 }
 
 /* Menu lateral */
-/* Menu lateral */
 .side-menu {
     position: fixed;
     top: 0;
@@ -69,7 +68,6 @@
     width: 250px;
     height: 100%;
     background-color: #ffffff;
-    /* box-shadow: 2px 0 5px rgba(0,0,0,0.5); */
     transition: left 0.6s ease; /* Añadir transición suave */
     z-index: 1000;
     padding-top: 60px;
@@ -97,7 +95,6 @@
 }
 /* END Menu lateral */
 
-
 /* Menu lateral charge car */
 .side-menu-chargecar {
     position: fixed;
@@ -106,7 +103,6 @@
     width: 250px;
     height: 100%;
     background-color: #ffffff;
-    /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); */
     transition: left 0.3s ease; /* Añadir transición suave */
     z-index: 1000;
     padding-top: 60px;
@@ -136,8 +132,6 @@
 .side-menu-chargecar {
     left: -250px;
 }/* END Menu lateral chargecar */
-
-
 
 @media only screen and (min-width: 768px) {
     html, body {
@@ -172,7 +166,6 @@
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
-        /* border: 1px solid black; */
         margin: 0;
         font-family: inter;
         color: #0A233F;
@@ -233,7 +226,7 @@
         padding: 0 10px;
     }
 
-    .mobile-navbar .logo-container img{
+    .mobile-navbar .logo-container img {
         height: 3rem;
     }
 
@@ -276,11 +269,7 @@
     .title-icon {
         justify-content: center;
     }
- 
 }
-
-
-
 
 @media (max-width: 767px) {
     .navbar {
@@ -290,9 +279,6 @@
     .mobile-navbar {
         display: flex; /* Mostrar navbar móvil */
     }
-
-
-
 }
 
 /* side-menu-mobile */
@@ -311,7 +297,6 @@
     width: 250px;
     height: 100%;
     background-color: #ffffff;
-    /* box-shadow: 2px 0 5px rgba(0,0,0,0.5); */
     transition: left 0.3s ease;
     z-index: 1000;
     padding-top: 60px;
@@ -338,13 +323,17 @@
     font-weight: 700;
 }
 
-
-
 /* Basic Slider */
 .slider-container {
-    width: 600px; /* Adjust width as needed */
+    width: 600px; /* Ajust width as needed */
     margin: 5vh auto 0; /* Center the slider horizontally */
     overflow: hidden; /* Prevent slides from overflowing */
+}
+
+@media (max-width: 767px) {
+    .slider-container {
+        width: 90vw; /* Adjust width for smaller screens */
+    }
 }
 
 .slider-screen {
