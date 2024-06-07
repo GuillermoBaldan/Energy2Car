@@ -5,28 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Quiénes somos? - Plataforma de Carga Eléctrica</title>
     
-    <link rel="stylesheet" href="../style/footer.css">
-    <link rel="stylesheet" href="../style/whoweare.css">
+
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/footer.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="../style/whoweare.css">
 
 </head>
 <body>
-    <div class="container-footer">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../IMG/Energy2Car_companyname2.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Carga tu coche</a></li>
+            <li><a href="../pages/whoweare.html">Quiénes somos</a></li>
+            <li><a href="../pages/help.html">Ayuda</a></li>
+        </ul>
+        <div class="register-btn">
+            <a href="../pages/form.html">Registrarse</a>
+        </div>
+    </nav>
+    <nav class="mobile-navbar">
+        <div class="logo-container">
+            <img src="./IMG/Energy2Car_companyname2.png" alt="icono 1">
+        </div>
+        <div class="menu-icon">
+            <div class="menu-icon-text"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+    <!-- Menú side-menu -->
+    <div class="side-menu">
+        <ul>
+            <li><a href="#" id="chargeCarLink">Carga tu coche</a></li>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+    </div><!-- END side-menu -->
+
+    <!-- Menú lateral chargecar -->
+    <div class="side-menu-chargecar">
+        <ul>
+            <li><a href="./pages/largetravels.html">Viajes largos</a></li>
+            <li><a href="./pages/prices.html">Precios</a></li>
+            <li><a href="./pages/planyourtravel.html">Planifica tu viaje</a></li>
+            <li><a href="./pages/enterprise.html">Para empresas</a></li>
+            <li><a href="./pages/suscription.html">Suscríbete y ahorra</a></li>
+        </ul>
+    </div><!-- END Menú lateral chargecar -->
+    <div class="container-dropdown-menu" id="menu-car"> 
+        <div class="box">
+            <div class="title-icon">
+                <div class="icon-content"><i class="fa-solid fa-route"></i></div>
+                <div class="title">Viajes cortos</div>
+            </div>
+            <div class="description">Encuentra estaciones de carga rápida cerca de ti para esos viajes cortos y cotidianos.</div>
+        </div>
+        <div class="box">
+            <div class="title-icon">
+                <div class="icon-content"><i class="fa-solid fa-earth-europe"></i></div>
+                <div class="title"><a href="./pages/largetravels.html">Viajes largos</a></div>
+            </div>
+            <div class="description">Planifica tus rutas de largo recorrido con nuestras estaciones de carga en toda la región.</div>
+        </div>
+        <div class="box">
+            <div class="title-icon">
+                <div class="icon-content"><i class="fa-solid fa-money-bill-1-wave"></i></div>
+                <div class="title"><a href="./pages/prices.html">Precios</a></div>
+            </div>
+            <div class="description">Consulta nuestras tarifas competitivas y opciones de pago flexibles para la carga de tu vehículo.</div>
+        </div>
+        <div class="box">
+            <div class="title-icon">
+                <div class="icon-content"><i class="fa-solid fa-location-crosshairs"></i></div>
+                <div class="title"><a href="./pages/planyourtravel.html">Planifica tu viaje</a></div>
+            </div>
+            <div class="description">Utiliza nuestro planificador de viajes para encontrar estaciones de carga en tu ruta.</div>
+        </div>
+        <div class="box">
+            <div class="title-icon">
+                <div class="icon-content"><i class="fa-solid fa-business-time"></i></i></div>
+                <div class="title"><a href="./pages/enterprise.html">Para empresas</a></div>
+            </div>
+            <div class="description">Soluciones de carga eléctrica personalizadas para flotas empresariales y estacionamientos corporativos.</div>
+        </div>
+        <div class="box">
+            <div class="title-icon">
+                <div class="icon-content"><i class="fa-solid fa-piggy-bank"></i></div>
+                <div class="title"><a href="./pages/suscription.html">Suscribete y ahorra</a></div>
+            </div>
+            <div class="description">Aprovecha nuestras suscripciones para obtener tarifas reducidas y beneficios adicionales.</div>
+        </div>
+    </div>
+    
+        <!-- END barra de navegación y menu -->
+    <div class="container">
         <div class="footer-frame17">
-            <div class="footer-quote">
+            <div class="aboutus-quote">
                 <p>Conoce más sobre nosotros</p>
             </div>
-            <div class="socialnets">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fab fa-instagram"></i>
-            </div>
+         
         </div>
-        <div class="line"></div>
-        <div class="footer-frame19">
-            <section class="footer-aboutus">
+       
+        <div class="contanier-aboutus">
+            <section class="section-aboutus">
                 <div>
                     <h2>Nosotros</h2>
                     <p>Somos una plataforma dedicada a facilitar la carga de vehículos eléctricos, ofreciendo una red extensa y confiable de estaciones de carga para garantizar que siempre tengas acceso a la energía que necesitas. Nos comprometemos a proporcionar soluciones de carga accesibles y eficientes, ayudando a que más personas adopten vehículos eléctricos y contribuyan a un futuro más sostenible. Nuestro objetivo es hacer que la carga de tu vehículo sea lo más sencilla y conveniente posible, para que puedas centrarte en lo que realmente importa: tu viaje.</p>
@@ -48,30 +135,51 @@
                     <p>Nos guiamos por valores como la sostenibilidad, la innovación, la eficiencia y el compromiso con nuestros clientes, siempre buscando ofrecer el mejor servicio y contribuir positivamente al medio ambiente. Creemos en la importancia de actuar con integridad y responsabilidad en todas nuestras operaciones. La sostenibilidad está en el núcleo de todo lo que hacemos, impulsándonos a buscar constantemente maneras de minimizar nuestro impacto ambiental. Nos esforzamos por ser líderes en innovación, adoptando nuevas tecnologías y métodos para mejorar continuamente nuestros servicios y satisfacer las necesidades de nuestros usuarios.</p>
                 </div>
             </section>
+          
+        
+        </div>
+   <!-- Footer -->
+   <div class="container-footer">
+    <div class="notes-tab">
+        <p>Notas</p>
+        <p><i class="fa-solid fa-angle-down"></i></p>
+   </div>
+    <div class="footer-frame19">
+        <div class="footer-frame17"> 
+            <div class="footer-frame16">
+                <h2 class="footer-quote">TU LIBERTAD DE MOVIMIENTO</h2>
+                <h2 class="socialnets"><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-linkedin"></i></h2>
+            </div>
             <div class="footer-options">
-                <p><a href="./pages/faq.html">FAQ</a></p>
-                <p>ÚNETE AL EQUIPO</p>
-                <p>SHARE NOW REWARDS</p>
-                <p>PRENSA</p>
-                <p>BLOG</p>
-                <p>TÉRMINOS Y CONDICIONES</p>
-                <p>CONTÁCTANOS</p>
-            </div>
-            <div class="footer-stores">
-                <img src="path/to/apple-store-logo.png" alt="Apple Store">
-                <img src="path/to/google-play-logo.png" alt="Google Play">
+                    <p><a href="./pages/faq.html">FAQ</a></p>
+                    <p>ÚNETE AL EQUIPO</p>
+                    <p>SHARE NOW REWARDS</p>
+                    <p>SHARE NOW REWARDS</p>
+                    <p>PRENSA</p>
+                    <p>BLOG</p>
+                    <p>TÉRMINOS Y CONDICIONES</p>
+                    <p>CONTÁCTANOS</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="organization">
-                <p>&copy; 2024 Plataforma de Carga Eléctrica. Todos los derechos reservados.</p>
-            </div>
-            <div class="select-language">
-                <p>Idioma</p>
-                <i class="fas fa-globe"></i>
-            </div>
+        <div class="footer-stores">
+            <img src="../IMG/apple-store.svg" alt="apple store icon">
+            <img src="../IMG/google-play-badge_ES.svg" alt="google play icon">
         </div>
+      </div>
+    <div class="line"></div>
+    <div class="footer-bottom">
+        <p class="organization">Ⓒ 2024 United Dreams S.A</p>
+        <div class="footer-aboutus">
+            <p>Sobre nosotros</p>
+            <p>Aviso legal</p>
+            <p>Privacidad</p>
+            <p>Gestionar cookies</p>
+        </div>
+        <p class="select-language">Español<i class="fa-solid fa-angle-down"></i></p>
     </div>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</div><!-- END footer -->
+    </div>
+    <script src="https://kit.fontawesome.com/87e0183ecf.js" crossorigin="anonymous"></script>
+    <script src="../JS/index.v2.js"></script>
 </body>
 </html>
