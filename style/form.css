@@ -6,16 +6,17 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
+    background-color: white;
+  
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
 
-.container {
+
+
+.container-form {
     background-color: #022c43;
     color: #ffffff;
     padding: 2rem;
@@ -23,18 +24,21 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     max-width: 600px;
     width: 100%;
+    margin-bottom: 5rem ;
 }
 
 h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color:  #0A233F;
 }
 
 p {
     margin-bottom: 1.5rem;
     line-height: 1.6;
-    color: #ffffff;
+    color: #0A233F;
+    max-width: 600px;
+    width: 100%;
 }
 
 form {
