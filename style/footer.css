@@ -170,11 +170,12 @@ background-color: #F5F5F5;
 }
 
 .footer-options{
-    text-align: left;
+    text-align: right;
 }
 
 .footer-options p {
     margin: 0.5rem 0;
+    text-align: right;
 }
 
 .footer-options a {
