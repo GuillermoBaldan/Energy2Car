@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /*END side-menu    */
 
 /* Menú side-menu-chargecar */
+/* Menú side-menu-chargecar */
 document.addEventListener('DOMContentLoaded', () => {
     const chargeCarLink = document.getElementById('chargeCarLink');
     const sideMenuChargeCar = document.querySelector('.side-menu-chargecar');
@@ -82,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
 /*END side-menu-chargecar    */
 

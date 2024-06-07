@@ -7,13 +7,13 @@
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: white;;
     color: #333;
 }
 
 header {
-    background-color: #005478;
-    color: white;
+   
+    color:  #005478;
     padding: 1rem 0;
     text-align: center;
 }
